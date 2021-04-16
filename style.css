@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 26, 121, 0.896796218487395) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+.app-title {
+  margin: 2rem 0rem .5rem 0rem;
+  color: #fff;
+  font-size: 3em;
+}
+
+.bookListForm {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px #000;
+  background-color: #fff;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0rem;
+  text-align: left;
+}
+
+.form-group label {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+}
+
+.form-group input {
+  padding: .5rem;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  caret-color: rgba(9, 26, 121, 0.896796218487395);
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  border: none;
+  outline: none;
+  background-color: rgba(9, 26, 121, 0.896796218487395);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color .3s ease-in;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(9, 26, 121, 0.781);
+}
+
+.books {
+  border-width: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0rem 1rem 3rem 1rem;
+}
+
+.books th, td {
+  padding: 10px;
+}
+
+.books th {
+  background-color: rgba(0, 212, 255, 1);
+}
+
+.books tr:nth-child(odd) {
+  background: #eee;
+}
+
+.books td:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.books td:last-of-type a {
+  background-color: red;
+  padding: .3rem;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.error {
+  width: 90%;
+  max-width: 400px;
+  background-color: red;
+  color: #fff;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  border-radius: 5px;
+  text-align: center;
+}
